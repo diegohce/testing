@@ -41,3 +41,7 @@ func (s *TestServer) Address() string {
 func (s *TestServer) Stop() {
 	s.l.Close()
 }
+
+func (s *TestServer) Close() {
+	s.l.Close()
+}
